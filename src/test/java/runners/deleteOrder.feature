@@ -45,7 +45,7 @@ Feature: Eliminar orden
     # Eliminar orden
     Given url 'https://simple-books-api.click/orders'
 
-    And path orderId
+    And path orderIdgit
 
     And header Authorization = 'Bearer ' + token
 
