@@ -4,13 +4,15 @@ Feature: Registrar cliente
 
     Given url 'https://simple-books-api.click/api-clients'
 
+    * def email = 'jhon.fredy.' + java.util.UUID.randomUUID() + '@pruebas.com'
+
     And request
-    """
-    {
-      "clientName": "Jhon Fredy",
-      "clientEmail": "jhon.fredy.karate@prueba.com"
-    }
-    """
+"""
+{
+  "clientName": "Jhon Fredy",
+  "clientEmail": "#(email)"
+}
+"""
 
     When method POST
 
