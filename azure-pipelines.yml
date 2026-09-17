@@ -26,4 +26,4 @@ steps:
   displayName: 'Publicar reportes Karate'
   inputs:
     targetPath: 'target'
-    artifact: 'KarateReport''
+    artifact: 'KarateReport'
