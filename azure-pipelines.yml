@@ -11,6 +11,9 @@ pool:
 
 steps:
 
+- script: java -version
+  displayName: 'Verificar Java'
+
 - task: Maven@4
   displayName: 'Ejecutar pruebas Karate'
   inputs:
