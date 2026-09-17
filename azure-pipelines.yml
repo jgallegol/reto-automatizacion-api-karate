@@ -25,5 +25,5 @@ steps:
 - task: PublishPipelineArtifact@1
   displayName: 'Publicar reportes Karate'
   inputs:
-    targetPath: 'target/karate-reports'
+    targetPath: 'target'
     artifact: 'KarateReport'
